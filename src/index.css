@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== COLOR PALETTES ========== */
+:root, [data-palette="cyan"] {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --accent: #00f0ff;
+  --accent-glow: rgba(0, 240, 255, 0.4);
+  --text-primary: #e0e0e0;
+  --text-secondary: #888899;
+  --cube-face: rgba(0, 240, 255, 0.05);
+  --cube-face-hover: rgba(0, 240, 255, 0.15);
+  --cube-face-active: rgba(0, 240, 255, 0.25);
+  --grid-color: rgba(0, 240, 255, 0.06);
+  --font-display: 'Orbitron', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+  --border-radius: 0px;
+}
+
+[data-palette="pink"] {
+  --bg-primary: #0d0011;
+  --bg-secondary: #1a0022;
+  --accent: #ff2d95;
+  --accent-glow: rgba(255, 45, 149, 0.4);
+  --text-primary: #f0d0e8;
+  --text-secondary: #9977aa;
+  --cube-face: rgba(255, 45, 149, 0.05);
+  --cube-face-hover: rgba(255, 45, 149, 0.15);
+  --cube-face-active: rgba(255, 45, 149, 0.25);
+  --grid-color: rgba(255, 45, 149, 0.06);
+}
+
+[data-palette="green"] {
+  --bg-primary: #000a00;
+  --bg-secondary: #001200;
+  --accent: #00ff41;
+  --accent-glow: rgba(0, 255, 65, 0.4);
+  --text-primary: #b0ffb0;
+  --text-secondary: #447744;
+  --cube-face: rgba(0, 255, 65, 0.05);
+  --cube-face-hover: rgba(0, 255, 65, 0.15);
+  --cube-face-active: rgba(0, 255, 65, 0.25);
+  --grid-color: rgba(0, 255, 65, 0.06);
+}
+
+[data-palette="orange"] {
+  --bg-primary: #0f0800;
+  --bg-secondary: #1a1000;
+  --accent: #ff9500;
+  --accent-glow: rgba(255, 149, 0, 0.4);
+  --text-primary: #ffe0b0;
+  --text-secondary: #aa8844;
+  --cube-face: rgba(255, 149, 0, 0.05);
+  --cube-face-hover: rgba(255, 149, 0, 0.15);
+  --cube-face-active: rgba(255, 149, 0, 0.25);
+  --grid-color: rgba(255, 149, 0, 0.06);
+}
+
+[data-palette="blue"] {
+  --bg-primary: #f0f4f8;
+  --bg-secondary: #dde4ec;
+  --accent: #0066cc;
+  --accent-glow: rgba(0, 102, 204, 0.3);
+  --text-primary: #1a2a3a;
+  --text-secondary: #5577aa;
+  --cube-face: rgba(0, 102, 204, 0.08);
+  --cube-face-hover: rgba(0, 102, 204, 0.18);
+  --cube-face-active: rgba(0, 102, 204, 0.28);
+  --grid-color: rgba(0, 102, 204, 0.06);
+}
+
+/* ========== VISUAL STYLE: SCI-FI ========== */
+[data-style="scifi"] .style-bg {
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+[data-style="scifi"] .scanline-overlay {
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px, rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+/* ========== VISUAL STYLE: MINIMAL ========== */
+[data-style="minimal"] .style-bg {
+  background-image:
+    radial-gradient(circle at 20% 80%, var(--accent-glow) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, var(--accent-glow) 0%, transparent 50%);
+  background-size: 100% 100%;
+  opacity: 1;
+}
+
+[data-style="minimal"] .scanline-overlay {
+  display: none;
+}
+
+[data-style="minimal"] .retro-button {
+  border-radius: 8px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+[data-style="minimal"] .retro-button:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+[data-style="minimal"] .face-content-panel {
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12), 0 0 0 1px var(--accent);
+  backdrop-filter: blur(16px);
+  border: none;
+}
+
+/* ========== VISUAL STYLE: PLAYFUL ========== */
+[data-style="playful"] .style-bg {
+  background: linear-gradient(
+    135deg,
+    var(--bg-primary) 0%,
+    var(--bg-secondary) 30%,
+    var(--bg-primary) 50%,
+    var(--bg-secondary) 70%,
+    var(--bg-primary) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 12s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+[data-style="playful"] .scanline-overlay {
+  display: none;
+}
+
+[data-style="playful"] .retro-button {
+  border-radius: 24px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-width: 2px;
+  background: var(--cube-face);
+  padding: 8px 20px;
+}
+
+[data-style="playful"] .retro-button:hover {
+  background: var(--cube-face-active);
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px var(--accent-glow), 0 0 30px var(--accent-glow);
+}
+
+[data-style="playful"] .face-content-panel {
+  border-radius: 24px;
+  border-width: 2px;
+  box-shadow: 0 12px 50px rgba(0,0,0,0.15), 0 0 20px var(--accent-glow);
+  background: var(--bg-secondary);
+}
+
+/* ========== BASE STYLES ========== */
+body {
+  font-family: var(--font-mono);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scanline-overlay {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px, rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+.glow-text {
+  text-shadow: 0 0 10px var(--accent-glow), 0 0 20px var(--accent-glow), 0 0 40px var(--accent-glow);
+}
+
+.face-content-panel {
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--accent);
+  background: var(--bg-secondary);
+  box-shadow: 0 0 30px var(--accent-glow), inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.retro-button {
+  font-family: var(--font-display);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  padding: 6px 16px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.retro-button:hover {
+  background: var(--cube-face-hover);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.retro-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--cube-face-hover), transparent);
+  transition: left 0.5s ease;
+}
+
+.retro-button:hover::before {
+  left: 100%;
+}
