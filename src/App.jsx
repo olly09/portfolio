@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useTheme } from './contexts/ThemeContext'
+import WipPage from './components/WipPage'
 import LoadingCube from './components/LoadingCube'
 import PortfolioCube from './components/PortfolioCube'
 import FloatingTech from './components/FloatingTech'
@@ -8,6 +9,9 @@ import FloatingDecor from './components/FloatingDecor'
 import FaceContent from './components/FaceContent'
 import ThemeSelector from './components/ThemeSelector'
 import LanguageSelector from './components/LanguageSelector'
+
+// ✦ Set to false when ready to launch the full portfolio
+const WIP_MODE = true
 
 export default function App() {
   const [phase, setPhase] = useState('loading')
@@ -26,6 +30,8 @@ export default function App() {
   const handleCloseContent = useCallback(() => {
     setActiveFace(null)
   }, [])
+
+  if (WIP_MODE) return <WipPage />
 
   return (
     <div
