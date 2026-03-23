@@ -3,16 +3,14 @@ import { useTranslation } from 'react-i18next'
 import { useTheme } from '../contexts/ThemeContext'
 
 const TECH_LIST = [
-  { id: 'react', label: 'React' },
+  { id: 'html', label: 'HTML' },
+  { id: 'css', label: 'CSS' },
   { id: 'javascript', label: 'JS' },
   { id: 'typescript', label: 'TS' },
-  { id: 'nodejs', label: 'Node' },
-  { id: 'python', label: 'Python' },
-  { id: 'css', label: 'CSS' },
+  { id: 'react', label: 'React' },
+  { id: 'styledcomp', label: 'SC' },
+  { id: 'java', label: 'Java' },
   { id: 'git', label: 'Git' },
-  { id: 'docker', label: 'Docker' },
-  { id: 'sql', label: 'SQL' },
-  { id: 'threejs', label: 'Three' },
 ]
 
 const BUBBLE_SIZE = 54
@@ -161,8 +159,26 @@ function TechBubble({ tech, initialPos, onSelect, isSelected, bubbleShape, index
           >
             {tech.label}
           </div>
+          <div className="flex gap-1 mb-1.5">
+            {[1, 2, 3].map(dot => {
+              const level = t(`techBubbles.${tech.id}.level`, { returnObjects: true })
+              const filled = dot <= (typeof level === 'number' ? level : 0)
+              return (
+                <div
+                  key={dot}
+                  style={{
+                    width: 8, height: 8,
+                    borderRadius: '50%',
+                    border: '1px solid var(--accent)',
+                    background: filled ? 'var(--accent)' : 'transparent',
+                    transition: 'background 0.3s',
+                  }}
+                />
+              )
+            })}
+          </div>
           <div className="leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-            {t(`techBubbles.${tech.id}`)}
+            {t(`techBubbles.${tech.id}.text`)}
           </div>
         </div>
       )}

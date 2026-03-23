@@ -77,7 +77,7 @@ export default function App() {
               className="text-[0.6rem] tracking-wider mt-0.5"
               style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}
             >
-              [PLACEHOLDER — Your title, e.g. FULL STACK DEVELOPER]
+              FRONT-END DEVELOPER & GRAPHIC DESIGNER
             </div>
           </div>
 

@@ -16,52 +16,50 @@ const resources = {
       },
       aboutContent: {
         title: "About Me",
-        text: "[PLACEHOLDER — Write a short bio about yourself, your passions, and what drives you as a developer.]"
+        text: "Hey! I'm Oliver Megale — a front-end developer with a graphic design soul, based in sunny Tenerife. For 5 years I've been turning ideas into pixel-perfect, interactive experiences. I speak three languages, think in components, and never stop learning. Design meets code in everything I build."
       },
       workContent: {
         title: "Projects",
         items: [
-          { name: "[Project Name 1]", desc: "[PLACEHOLDER — Brief description of the project, tech used, and your role.]" },
-          { name: "[Project Name 2]", desc: "[PLACEHOLDER — Brief description of the project, tech used, and your role.]" },
-          { name: "[Project Name 3]", desc: "[PLACEHOLDER — Brief description of the project, tech used, and your role.]" }
+          { name: "[PROJECT — Add your best project]", desc: "[Add a brief description: what it does, tech stack, and your role.]" },
+          { name: "[PROJECT — Add another project]", desc: "[Add a brief description: what it does, tech stack, and your role.]" },
+          { name: "[PROJECT — Add another project]", desc: "[Add a brief description: what it does, tech stack, and your role.]" }
         ]
       },
       skillsContent: {
         title: "Skills",
-        text: "[PLACEHOLDER — List your core technical and soft skills here.]"
+        text: "Front-end architecture, responsive design, component-driven UI, design systems, cross-browser optimization, performance tuning, UX/UI sensibility, team leadership, agile workflows."
       },
       contactContent: {
         title: "Contact",
-        email: "[PLACEHOLDER — your@email.com]",
-        github: "[PLACEHOLDER — github.com/yourusername]",
-        linkedin: "[PLACEHOLDER — linkedin.com/in/yourusername]",
-        text: "[PLACEHOLDER — Add a message inviting people to reach out.]"
+        email: "[your@email.com]",
+        github: "[github.com/yourusername]",
+        linkedin: "[linkedin.com/in/yourusername]",
+        text: "Got a project in mind? Let's build something amazing together. I'm always open to new challenges and collaborations."
       },
       educationContent: {
         title: "Education",
         items: [
-          { name: "[Degree / Course 1]", desc: "[PLACEHOLDER — Institution, year, and brief description.]" },
-          { name: "[Degree / Course 2]", desc: "[PLACEHOLDER — Institution, year, and brief description.]" }
+          { name: "IT-Focused High School Diploma", desc: "Italy — Computer science specialization with a strong foundation in programming, logic, and systems." },
+          { name: "Continuous Learning", desc: "Various online courses and certifications in front-end development, React, TypeScript, and graphic design." }
         ]
       },
       experienceContent: {
         title: "Experience",
         items: [
-          { name: "[Job Title 1]", desc: "[PLACEHOLDER — Company, period, and brief description of your role.]" },
-          { name: "[Job Title 2]", desc: "[PLACEHOLDER — Company, period, and brief description of your role.]" }
+          { name: "Head Front-End Developer", desc: "Liberi dal Lavoro — Leading the front-end team, architecting scalable React applications, and bridging design with development." },
+          { name: "5 Years in the Industry", desc: "From junior to team lead — building everything from landing pages to complex web apps, always pushing the craft forward." }
         ]
       },
       techBubbles: {
-        react: "[PLACEHOLDER — Your React experience and skill level]",
-        javascript: "[PLACEHOLDER — Your JavaScript experience and skill level]",
-        typescript: "[PLACEHOLDER — Your TypeScript experience and skill level]",
-        nodejs: "[PLACEHOLDER — Your Node.js experience and skill level]",
-        python: "[PLACEHOLDER — Your Python experience and skill level]",
-        css: "[PLACEHOLDER — Your CSS/Styling experience and skill level]",
-        git: "[PLACEHOLDER — Your Git experience and skill level]",
-        docker: "[PLACEHOLDER — Your Docker experience and skill level]",
-        sql: "[PLACEHOLDER — Your SQL/Database experience and skill level]",
-        threejs: "[PLACEHOLDER — Your Three.js experience and skill level]"
+        html: { text: "The foundation. Semantic, accessible, clean.", level: 3 },
+        css: { text: "Where design comes alive. Animations, layouts, magic.", level: 3 },
+        javascript: { text: "My main language. DOM, async, ES6+ — fluent.", level: 3 },
+        typescript: { text: "Type-safe code. Fewer bugs, better DX.", level: 2 },
+        react: { text: "My daily weapon. Hooks, state, architecture.", level: 3 },
+        styledcomp: { text: "CSS-in-JS done right. Scoped, dynamic, elegant.", level: 3 },
+        java: { text: "OOP fundamentals. Solid backend awareness.", level: 2 },
+        git: { text: "Branching, rebasing, PRs. Clean git history.", level: 3 }
       },
       themeLabel: "THEME",
       langLabel: "LANG",
@@ -84,52 +82,50 @@ const resources = {
       },
       aboutContent: {
         title: "Chi Sono",
-        text: "[SEGNAPOSTO — Scrivi una breve bio su di te, le tue passioni e cosa ti motiva come sviluppatore.]"
+        text: "Ciao! Sono Oliver Megale — sviluppatore front-end con un'anima da graphic designer, basato nella soleggiata Tenerife. Da 5 anni trasformo idee in esperienze interattive pixel-perfect. Parlo tre lingue, penso in componenti e non smetto mai di imparare. Design e codice si incontrano in tutto quello che creo."
       },
       workContent: {
         title: "Lavori",
         items: [
-          { name: "[Nome Progetto 1]", desc: "[SEGNAPOSTO — Breve descrizione del progetto, tecnologie usate e il tuo ruolo.]" },
-          { name: "[Nome Progetto 2]", desc: "[SEGNAPOSTO — Breve descrizione del progetto, tecnologie usate e il tuo ruolo.]" },
-          { name: "[Nome Progetto 3]", desc: "[SEGNAPOSTO — Breve descrizione del progetto, tecnologie usate e il tuo ruolo.]" }
+          { name: "[PROGETTO — Aggiungi il tuo miglior progetto]", desc: "[Aggiungi una breve descrizione: cosa fa, tech stack e il tuo ruolo.]" },
+          { name: "[PROGETTO — Aggiungi un altro progetto]", desc: "[Aggiungi una breve descrizione: cosa fa, tech stack e il tuo ruolo.]" },
+          { name: "[PROGETTO — Aggiungi un altro progetto]", desc: "[Aggiungi una breve descrizione: cosa fa, tech stack e il tuo ruolo.]" }
         ]
       },
       skillsContent: {
         title: "Competenze",
-        text: "[SEGNAPOSTO — Elenca le tue competenze tecniche e trasversali qui.]"
+        text: "Architettura front-end, design responsivo, UI component-driven, design system, ottimizzazione cross-browser, performance, sensibilita UX/UI, leadership di team, workflow agile."
       },
       contactContent: {
         title: "Contatti",
-        email: "[SEGNAPOSTO — tua@email.com]",
-        github: "[SEGNAPOSTO — github.com/tuousername]",
-        linkedin: "[SEGNAPOSTO — linkedin.com/in/tuousername]",
-        text: "[SEGNAPOSTO — Aggiungi un messaggio che inviti le persone a contattarti.]"
+        email: "[tua@email.com]",
+        github: "[github.com/tuousername]",
+        linkedin: "[linkedin.com/in/tuousername]",
+        text: "Hai un progetto in mente? Costruiamo qualcosa di straordinario insieme. Sono sempre aperto a nuove sfide e collaborazioni."
       },
       educationContent: {
         title: "Formazione",
         items: [
-          { name: "[Titolo / Corso 1]", desc: "[SEGNAPOSTO — Istituto, anno e breve descrizione.]" },
-          { name: "[Titolo / Corso 2]", desc: "[SEGNAPOSTO — Istituto, anno e breve descrizione.]" }
+          { name: "Diploma Superiore Indirizzo Informatico", desc: "Italia — Specializzazione in informatica con solide basi in programmazione, logica e sistemi." },
+          { name: "Formazione Continua", desc: "Vari corsi online e certificazioni in sviluppo front-end, React, TypeScript e graphic design." }
         ]
       },
       experienceContent: {
         title: "Esperienza",
         items: [
-          { name: "[Ruolo 1]", desc: "[SEGNAPOSTO — Azienda, periodo e breve descrizione del ruolo.]" },
-          { name: "[Ruolo 2]", desc: "[SEGNAPOSTO — Azienda, periodo e breve descrizione del ruolo.]" }
+          { name: "Head Front-End Developer", desc: "Liberi dal Lavoro — Guida del team front-end, architettura di applicazioni React scalabili e ponte tra design e sviluppo." },
+          { name: "5 Anni nel Settore", desc: "Da junior a team lead — costruendo di tutto, dalle landing page alle web app complesse, spingendo sempre il craft avanti." }
         ]
       },
       techBubbles: {
-        react: "[SEGNAPOSTO — La tua esperienza con React]",
-        javascript: "[SEGNAPOSTO — La tua esperienza con JavaScript]",
-        typescript: "[SEGNAPOSTO — La tua esperienza con TypeScript]",
-        nodejs: "[SEGNAPOSTO — La tua esperienza con Node.js]",
-        python: "[SEGNAPOSTO — La tua esperienza con Python]",
-        css: "[SEGNAPOSTO — La tua esperienza con CSS/Styling]",
-        git: "[SEGNAPOSTO — La tua esperienza con Git]",
-        docker: "[SEGNAPOSTO — La tua esperienza con Docker]",
-        sql: "[SEGNAPOSTO — La tua esperienza con SQL/Database]",
-        threejs: "[SEGNAPOSTO — La tua esperienza con Three.js]"
+        html: { text: "La base. Semantico, accessibile, pulito.", level: 3 },
+        css: { text: "Dove il design prende vita. Animazioni, layout, magia.", level: 3 },
+        javascript: { text: "Il mio linguaggio principale. DOM, async, ES6+ — fluente.", level: 3 },
+        typescript: { text: "Codice type-safe. Meno bug, migliore DX.", level: 2 },
+        react: { text: "La mia arma quotidiana. Hooks, state, architettura.", level: 3 },
+        styledcomp: { text: "CSS-in-JS fatto bene. Scopato, dinamico, elegante.", level: 3 },
+        java: { text: "Fondamenti OOP. Solida consapevolezza backend.", level: 2 },
+        git: { text: "Branching, rebasing, PR. Storico git pulito.", level: 3 }
       },
       themeLabel: "TEMA",
       langLabel: "LINGUA",
@@ -152,52 +148,50 @@ const resources = {
       },
       aboutContent: {
         title: "Sobre Mi",
-        text: "[MARCADOR — Escribe una breve bio sobre ti, tus pasiones y lo que te motiva como desarrollador.]"
+        text: "Hola! Soy Oliver Megale — desarrollador front-end con alma de disenador grafico, basado en la soleada Tenerife. Llevo 5 anos transformando ideas en experiencias interactivas pixel-perfect. Hablo tres idiomas, pienso en componentes y nunca dejo de aprender. Diseno y codigo se encuentran en todo lo que construyo."
       },
       workContent: {
         title: "Proyectos",
         items: [
-          { name: "[Nombre Proyecto 1]", desc: "[MARCADOR — Breve descripcion del proyecto, tecnologias usadas y tu rol.]" },
-          { name: "[Nombre Proyecto 2]", desc: "[MARCADOR — Breve descripcion del proyecto, tecnologias usadas y tu rol.]" },
-          { name: "[Nombre Proyecto 3]", desc: "[MARCADOR — Breve descripcion del proyecto, tecnologias usadas y tu rol.]" }
+          { name: "[PROYECTO — Anade tu mejor proyecto]", desc: "[Anade una breve descripcion: que hace, tech stack y tu rol.]" },
+          { name: "[PROYECTO — Anade otro proyecto]", desc: "[Anade una breve descripcion: que hace, tech stack y tu rol.]" },
+          { name: "[PROYECTO — Anade otro proyecto]", desc: "[Anade una breve descripcion: que hace, tech stack y tu rol.]" }
         ]
       },
       skillsContent: {
         title: "Habilidades",
-        text: "[MARCADOR — Lista tus habilidades tecnicas y blandas aqui.]"
+        text: "Arquitectura front-end, diseno responsivo, UI basada en componentes, design systems, optimizacion cross-browser, rendimiento, sensibilidad UX/UI, liderazgo de equipo, flujos agiles."
       },
       contactContent: {
         title: "Contacto",
-        email: "[MARCADOR — tu@email.com]",
-        github: "[MARCADOR — github.com/tuusuario]",
-        linkedin: "[MARCADOR — linkedin.com/in/tuusuario]",
-        text: "[MARCADOR — Agrega un mensaje invitando a contactarte.]"
+        email: "[tu@email.com]",
+        github: "[github.com/tuusuario]",
+        linkedin: "[linkedin.com/in/tuusuario]",
+        text: "Tienes un proyecto en mente? Construyamos algo increible juntos. Siempre estoy abierto a nuevos retos y colaboraciones."
       },
       educationContent: {
         title: "Educacion",
         items: [
-          { name: "[Titulo / Curso 1]", desc: "[MARCADOR — Institucion, año y breve descripcion.]" },
-          { name: "[Titulo / Curso 2]", desc: "[MARCADOR — Institucion, año y breve descripcion.]" }
+          { name: "Bachillerato en Informatica", desc: "Italia — Especializacion en informatica con una solida base en programacion, logica y sistemas." },
+          { name: "Aprendizaje Continuo", desc: "Varios cursos online y certificaciones en desarrollo front-end, React, TypeScript y diseno grafico." }
         ]
       },
       experienceContent: {
         title: "Experiencia",
         items: [
-          { name: "[Puesto 1]", desc: "[MARCADOR — Empresa, periodo y breve descripcion del rol.]" },
-          { name: "[Puesto 2]", desc: "[MARCADOR — Empresa, periodo y breve descripcion del rol.]" }
+          { name: "Head Front-End Developer", desc: "Liberi dal Lavoro — Liderando el equipo front-end, arquitectando aplicaciones React escalables y conectando diseno con desarrollo." },
+          { name: "5 Anos en la Industria", desc: "De junior a team lead — construyendo de todo, desde landing pages hasta web apps complejas, siempre empujando el oficio hacia adelante." }
         ]
       },
       techBubbles: {
-        react: "[MARCADOR — Tu experiencia con React]",
-        javascript: "[MARCADOR — Tu experiencia con JavaScript]",
-        typescript: "[MARCADOR — Tu experiencia con TypeScript]",
-        nodejs: "[MARCADOR — Tu experiencia con Node.js]",
-        python: "[MARCADOR — Tu experiencia con Python]",
-        css: "[MARCADOR — Tu experiencia con CSS/Styling]",
-        git: "[MARCADOR — Tu experiencia con Git]",
-        docker: "[MARCADOR — Tu experiencia con Docker]",
-        sql: "[MARCADOR — Tu experiencia con SQL/Database]",
-        threejs: "[MARCADOR — Tu experiencia con Three.js]"
+        html: { text: "La base. Semantico, accesible, limpio.", level: 3 },
+        css: { text: "Donde el diseno cobra vida. Animaciones, layouts, magia.", level: 3 },
+        javascript: { text: "Mi lenguaje principal. DOM, async, ES6+ — fluido.", level: 3 },
+        typescript: { text: "Codigo type-safe. Menos bugs, mejor DX.", level: 2 },
+        react: { text: "Mi arma diaria. Hooks, state, arquitectura.", level: 3 },
+        styledcomp: { text: "CSS-in-JS bien hecho. Aislado, dinamico, elegante.", level: 3 },
+        java: { text: "Fundamentos OOP. Solida conciencia backend.", level: 2 },
+        git: { text: "Branching, rebasing, PRs. Historial git limpio.", level: 3 }
       },
       themeLabel: "TEMA",
       langLabel: "IDIOMA",
